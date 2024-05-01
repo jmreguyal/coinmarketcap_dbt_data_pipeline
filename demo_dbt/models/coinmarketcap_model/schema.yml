@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: coinmarketcap_clean
+    description: "Cleans the data and transfers it to prod."
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+    meta:
+      schema: prod  # Specify the production schema for this model

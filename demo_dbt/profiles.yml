@@ -1,0 +1,19 @@
+demo_dbt:
+  target: prod
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      port: 5432
+      user: postgres
+      pass: admin
+      dbname: postgres
+      schema: staging
+    prod:
+      type: postgres
+      host: 127.0.0.1
+      port: 5432
+      user: postgres
+      pass: admin
+      dbname: postgres
+      schema: prod
